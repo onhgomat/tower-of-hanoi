@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi Automatic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Automatic Tower of Hanoi</h1>
+
+    <div class="controls">
+        <button onclick="startHanoi()">Start</button>
+        <label>
+            Speed:
+            <input type="range" min="100" max="2000" value="500" id="speedRange">
+        </label>
+        <span id="speedValue">500ms</span>
+    </div>
+
+    <div class="game">
+        <div class="tower" id="tower1"></div>
+        <div class="tower" id="tower2"></div>
+        <div class="tower" id="tower3"></div>
+    </div>
+
+    <!-- Sound effect -->
+    <audio id="moveSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7c7c19ac7f.mp3?filename=click-124467.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
